@@ -267,7 +267,7 @@ nav.show{
 
 
 main{
-    overflow-x: hidden;
+    overflow: hidden;
    position: relative; 
 }
 .main_content_container{
