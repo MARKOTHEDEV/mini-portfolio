@@ -152,6 +152,7 @@ body{
     width: 100%;
     padding: .7rem .6rem;
     border-radius: 10px;
+    outline: none;
     border: .8px solid #ff416d46;
 }
 .input_box input:focus{
@@ -169,7 +170,7 @@ nav{
     /* border: 1px solid red; */
     height: 100vh;
     /* width: 170px;   */
-    width: 46%;  
+    width: 60%;  
     top: 0;
     left: 0;
     position: fixed; 
