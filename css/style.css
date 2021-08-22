@@ -53,7 +53,7 @@ body{
     
     /* border: 1px solid yellow; */
 }
-#preloader{
+#preloader,#noContent{
     color: pink;
     text-align: center;
     z-index: 60;

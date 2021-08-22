@@ -24,12 +24,12 @@
                 <ul class="navlinks">
                     <br>
                     <p class="my_name_in_nav">Nwokolo Matthew</p>
-                    <li class="navlink" ><a href="#" class="d " >Home</a></li>
-                    <li class="navlink"><a href="#" class="">About</a></li>
-                    <li class="navlink"><a href="#" class="">Skills</a></li>
-                    <li class="navlink"><a href="#" class="">Works</a></li>
-                    <li class="navlink" ><a href="#" class="">Blog</a></li>
-                    <li class="navlink"><a href="#" class="">Portfolio</a></li>
+                    <li class="navlink" onclick="hide_nav()"><a href="#" class="" >Home</a></li>
+                    <li class="navlink" onclick="hide_nav()"><a href="#about" class="">About</a></li>
+                    <li class="navlink" onclick="hide_nav()"><a href="#what_i_do" class="">Skills</a></li>
+                    <li class="navlink" onclick="Not_available()"><a href="#" class="">Works</a></li>
+                    <li class="navlink" onclick="Not_available()"><a href="#" class="">Blog</a></li>
+                    <li class="navlink" onclick="Not_available()"><a href="#" class="">Portfolio</a></li>
                     <li class="navlink"><a href="#" class="">Contact</a></li>
                 </ul>
             </div>
@@ -67,13 +67,26 @@
             </form>
         </div>
 
-
+        <!-- start of preloader -->
         <div class="floating_form visible" id="preloader">
             <form action="">
                 <img src="./images/preloader.gif" alt="">
                 <h2 class="heading ">Loading ...</h2>
         </form>
         </div>
+        <!-- end of preloader -->
+
+
+        <!-- start of No content -->
+        <div class="floating_form " id="noContent">
+            <form action="">
+                <img src="./images/preloader.gif" alt="">
+                <h2 class="heading pink_color">Not Available Yet</h2>
+            
+            </form> 
+        </div>
+        <!-- end of preloader -->
+
 
         <!-- start of all kind of floating forms -->
 
@@ -104,7 +117,7 @@
                         
                         <!-- <p>I'm a Passionate <span class="pink_color">Web Developer</span></p> -->
                         <p class="my_texts">I <span class="pink_color">design</span> and <span class="pink_color">code</span> beautifully simple things, and I love what I do.</p>
-                        <p class="my_texts">
+                        <p class="my_texts" id="about">
                             Hi, I’m Matt. Nice to meet you... <br><br>
                             
                             Since beginning my journey as a Web Dev, i have Built,Designed,Coded a whole website for different client
@@ -113,7 +126,7 @@
                             i'm quietly confident, naturally curious, and perpetually working on improving my chops one design or code problem at a time.
                         </p>    
     <br>
-                        <div class="what_i_do">
+                        <div class="what_i_do" id="what_i_do">
                             <h2 class="heading pink_color">Front-end Developer</h2>
                             <p class="my_texts">I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
                             <br>

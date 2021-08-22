@@ -55,3 +55,19 @@ window.addEventListener('load',()=>{
     
     preloader.classList.remove('visible')
 })
+
+let noContent = document.querySelector("#noContent")
+
+
+
+const Not_available=()=>{
+    
+    noContent.classList.add('visible')
+
+    setTimeout(()=>noContent.classList.remove('visible'),1000)
+}
+
+const hide_nav=()=>{
+    nav.classList.remove('show');
+
+}
