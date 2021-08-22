@@ -44,3 +44,14 @@ hire_me_btn_close.addEventListener('click',()=>{
     hire_me_form.classList.remove('visible')
 
 })
+
+
+// handles the loading of the webpage
+
+const preloader = document.querySelector('#preloader')
+
+window.addEventListener('load',()=>{
+    // preloader.classList.add('visible')
+    
+    preloader.classList.remove('visible')
+})
