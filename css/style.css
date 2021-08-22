@@ -32,22 +32,58 @@ body{
     width: 100%;
     height: 100%;
     /* position: relative; */
-    border: 1px solid red;
+    /* border: 1px solid red; */
     /* height: 100vh; */
     /* background: url(../images/website_container_blob.svg) no-repeat center/cover;
     background-size: 500px; */
     /* background-color: silver; */
 
 }
+.top_bar{
+    display: flex;
+    justify-content: space-between;
+    padding: .8rem 1rem;
+}
+.ham{
+    width: 30px;
+    font-size: 2rem;
 
+    cursor: pointer;
+    color: var(--pin-color);
+    
+    /* border: 1px solid yellow; */
+}
+/* start of classes that handles the close and open hambugersvg */
+.ham .fa-bars{
+    display: block;
+}
+.ham .fa-times{
+    display: none;
+}
+.ham.close .fa-times{
+ display: block;
+}
+.ham.close .fa-bars{
+    display: none;
+}
+/* end of classes that handles the close and open hambugersvg */
 
 nav{
     /* border: 1px solid red; */
-    height: 100%;
-    width: 45%;  
-    position: absolute; 
-    display: none;
+    height: 100vh;
+    /* width: 170px;   */
+    width: 46%;  
+    top: 0;
+    left: 0;
+    position: fixed; 
+    /* display: none; */
     z-index: 10;
+    transform: translateX(-100%);
+    transition: transform 1s ease-in-out;
+}
+nav.show{
+    transform: translateX(-1%);
+
 }
 .nav_container{
     height: 100%;
@@ -128,10 +164,11 @@ nav{
 
 
 main{
+    overflow-x: hidden;
    position: relative; 
 }
 .main_content_container{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding: 1rem .8rem;
 }
 

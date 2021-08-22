@@ -17,3 +17,14 @@ navlinks.addEventListener('click',(e)=>{
 
     }
     })
+
+
+
+// code for ham buger and sliding the nav bar
+const nav = document.querySelector("nav");
+const ham = document.querySelector(".ham");
+
+ham.addEventListener('click',e=>{
+    nav.classList.toggle('show');
+    ham.classList.toggle('close');
+})
