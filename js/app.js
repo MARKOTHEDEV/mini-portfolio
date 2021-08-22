@@ -69,5 +69,6 @@ const Not_available=()=>{
 
 const hide_nav=()=>{
     nav.classList.remove('show');
+    ham.classList.remove('close');
 
 }
