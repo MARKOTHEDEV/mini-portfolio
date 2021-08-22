@@ -82,6 +82,10 @@ body{
     transition: all .5s ease-in-out;
     outline: none;
 }
+.btn.empty_btn{
+        background-color: #ffff;
+        color: var(--pin-color);
+}
 
 /* .btn:focus{
     background-color:#d4214b;
@@ -97,6 +101,67 @@ body{
     transform: translateY(10px);
     box-shadow:         0px 5px 8px 0px rgba(50, 50, 50, 0.32);
    
+}
+.btn.empty_btn:hover{
+    background-color:gray;
+    transform: translateY(10px);
+    box-shadow:         0px 5px 8px 0px rgba(50, 50, 50, 0.32);
+    color: white;
+}
+.btn.empty_btn:focus{
+    background-color:gray;
+    transform: translateY(10px);
+    box-shadow:         0px 5px 8px 0px rgba(50, 50, 50, 0.32);
+    color: white;
+   
+}
+
+
+.floating_form{
+    background-color:rgba(19, 16, 16, 0.733);
+    position: fixed;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .7s ease-in-out;
+}
+.floating_form.visible{
+    visibility: visible;
+    opacity: 1;
+
+}
+.floating_form form{
+    background-color: white;
+    width: 90%;
+    border-radius: 10px;
+    padding: 1.2rem;
+    box-shadow:         0px 6px 22px 0px white;
+}
+
+.input_box{
+    margin: 4% 0;
+}
+.input_box input{
+    width: 100%;
+    padding: .7rem .6rem;
+    border-radius: 10px;
+    border: .8px solid #ff416d46;
+}
+.input_box input:focus{
+    box-shadow:         0px 6px 22px 0px rgba(50, 50, 50, 0.16);
+}
+
+.form__btn_box{
+    display: flex;
+    justify-content: space-between;
+
 }
 /* end of classes that handles the close and open hambugersvg */
 

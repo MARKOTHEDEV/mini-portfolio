@@ -28,3 +28,19 @@ ham.addEventListener('click',e=>{
     nav.classList.toggle('show');
     ham.classList.toggle('close');
 })
+
+
+// the code below handles any flaoting form
+const hire_me_btn_open = document.querySelector('#hire_me_btn_open');
+const hire_me_btn_close = document.querySelector('#hire_me_btn_close');
+const hire_me_form = document.querySelector('#hire_me_form')
+
+hire_me_btn_open.addEventListener('click',()=>{
+    hire_me_form.classList.add('visible')
+
+})
+
+hire_me_btn_close.addEventListener('click',()=>{
+    hire_me_form.classList.remove('visible')
+
+})
